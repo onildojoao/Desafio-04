@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background: url(./assets/fundo.svg);
+}
+
+.wholes {
+  position: absolute;
+  padding: 25rem 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10rem;
+  row-gap: 5rem;
+  z-index: 0;
+}
+
+.wholes img {
+  position: relative;
+  z-index: 0;
+}
+.wholes img:nth-child(1) {
+  z-index: 3;
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+}
+.wholes img:nth-child(2) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 5s;
+}
+.wholes img:nth-child(3) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 9s;
+}
+.wholes img:nth-child(4) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+}
+.wholes img:nth-child(5) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 4s;
+}
+.wholes img:nth-child(6) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+.wholes img:nth-child(7) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 11s;
+}
+.wholes img:nth-child(8) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 8s;
+}
+.wholes img:nth-child(9) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+}
+.wholes img:nth-child(10) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 14s;
+}
+.wholes img:nth-child(11) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 11s;
+}
+.wholes img:nth-child(12) {
+  animation: in linear infinite;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+
+@keyframes in {
+  0% {
+    background: url(./assets/toupeira1.svg);
+  }
+  20% {
+    background: url(./assets/toupeira2.svg);
+  }
+  40% {
+    background: url(./assets/toupeira3.svg);
+  }
+  60% {
+    background: url(./assets/toupeira4.svg);
+  }
+  80% {
+    background: url(./assets/toupeira5.svg);
+  }
+  100% {
+    background: url(./assets/toupeira6.svg);
+  }
+}
+
+@media (width < 1800px) {
+  .wholes {
+    padding: 25rem 20rem;
+  }
+}
+
+@media (width < 1400px) {
+  .wholes {
+    padding: 25rem 10rem;
+    column-gap: 5rem;
+    row-gap: 5rem;
+  }
+}
+
+@media (width < 1150px) {
+  .wholes {
+    padding: 25rem 5rem;
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+}
